@@ -1,39 +1,140 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import Image from 'next/image'
 const Home: NextPage = () => {
-  return (
-    <div className="text-center text-2xl justify-center items-center flex flex-col h-screen">
-      <h1 className="text-5xl font-bold bg-clip-text bg-black">LULO</h1>
-      <div className="mt-4 text-2xl">Funding order book. </div>
-      <div className="flex flex-row justify-center items-center mt-4">
-        <a href="https://twitter.com/lulo_trade">
-          <svg
-            className=""
-            xmlns="http://www.w3.org/2000/svg"
-            width="35"
-            height="35"
-            viewBox="0 0 24 24"
-          >
-            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-          </svg>
-        </a>
-        <a href="https://discord.gg/ahrDazzyqG">
-          <svg
-            className="ml-4"
-            width="35"
-            height="35"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M18.942 5.556a16.299 16.299 0 0 0-4.126-1.297c-.178.321-.385.754-.529 1.097a15.175 15.175 0 0 0-4.573 0 11.583 11.583 0 0 0-.535-1.097 16.274 16.274 0 0 0-4.129 1.3c-2.611 3.946-3.319 7.794-2.965 11.587a16.494 16.494 0 0 0 5.061 2.593 12.65 12.65 0 0 0 1.084-1.785 10.689 10.689 0 0 1-1.707-.831c.143-.106.283-.217.418-.331 3.291 1.539 6.866 1.539 10.118 0 .137.114.277.225.418.331-.541.326-1.114.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595c.415-4.396-.709-8.209-2.973-11.589zM8.678 14.813c-.988 0-1.798-.922-1.798-2.045s.793-2.047 1.798-2.047 1.815.922 1.798 2.047c.001 1.123-.793 2.045-1.798 2.045zm6.644 0c-.988 0-1.798-.922-1.798-2.045s.793-2.047 1.798-2.047 1.815.922 1.798 2.047c0 1.123-.793 2.045-1.798 2.045z" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  );
-};
+	return (
+		<>
+			<Head>
+				<title>Lulo Finance</title>
+			</Head>
 
-export default Home;
+			<div className="pages-wrapper">
+				<div className="pages-container">
+
+					<div className="header-wrapper">
+						<h1 className="header-title">LULO</h1>
+					</div>
+
+					<div className="section page1">
+						<div className="buffer">
+							<div className="vert-wrapper">
+								<div className="page-title">LULO</div>
+								<h2 className="page-subtitle">A Permissionless Funding Book Built for Defi 2.0</h2>
+
+								<div className="img-wrapper flex justify-center p-5">
+									<img className="object-scale-down" src="9db52f2b-75be-4e80-b5b9-db0b112be49f.png"></img>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div className="section page2">
+						<div className="buffer">
+							<div className="blocks-wrapper">
+								<div className="left-block">
+									<h2 className="page-subtitle">Experience Lending Built with the Transparency of an Order Book</h2>
+								</div>
+								<div className="right-block">
+									<div className="img-wrapper">
+										<img src="6aff1e80-10c5-4036-9f4c-73df308e2155.png"></img>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div className="section page3">
+						<div className="buffer">
+							<div className="blocks-wrapper">
+								<div className="left-block">
+									<div className="img-wrapper">
+										<img src="65d3c49b-504a-49b6-8839-f0ac8a6384de.png"></img>
+									</div>
+								</div>
+								<div className="right-block">
+									<h2 className="page-subtitle">Composable, Permissionless</h2>
+									<h3 className="page-subtitle">Seamlessly integrated with all of your favorite platforms</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div className="section page4">
+						<div className="buffer">
+							<div className="blocks-wrapper">
+								<div className="left-block">
+									<h2 className="page-subtitle">Fast, cheap, transparent</h2>
+									<h3 className="page-subtitle">
+										Place bids to Borrow, Offers to Lend, all with blazingly fast speeds and low costs
+									</h3>
+								</div>
+								<div className="right-block">
+									<div className="img-wrapper">
+										<img src="3420b4c4-2665-4f44-914f-e4fd8d41cf63.png"></img>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div className="section page5">
+						<div className="buffer">
+							<div className="blocks-wrapper">
+								<div className="left-block">
+									<div className="img-wrapper">
+										<img className="pl-20 rotate-45" src="aedb5e80-6975-41d4-b6eb-ebd579b774cd.png"></img>
+									</div>
+								</div>
+
+								<div className="right-block">
+									<h2 className="page-subtitle">Fast, cheap, transparent 2</h2>
+									<h3 className="page-subtitle">
+										Place bids to Borrow, Offers to Lend, all with blazingly fast speeds and low costs
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div className="section page6">
+						<div className="buffer">
+							<div className="blocks-wrapper">
+								<div className="left-block">
+									<h2 className="page-subtitle">Fast, cheap, transparent 3</h2>
+									<h3 className="page-subtitle">
+										Place bids to Borrow, Offers to Lend, all with blazingly fast speeds and low costs
+									</h3>
+								</div>
+								<div className="right-block">
+									<div className="img-wrapper">
+										<img src="d683e4f9-312f-44b8-9b7b-44718719d479.png"></img>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="solana-section" className="section page7">
+						<div className="buffer">
+							<div className="blocks-wrapper">
+								<div className="left-block">
+									<h2 className="page-subtitle">Powered by Solana</h2>
+								</div>
+
+								<div className="right-block pl-10">
+									<img className="max-w-xs" src="solanaShape1.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="footer-wrapper">
+						<h1 className="header-title">LULO</h1>
+						<div className="copyright">Copyright © 2021 . All Rights Reserved</div>
+					</div>
+				</div>
+			</div>
+		</>
+	)
+}
+
+export default Home

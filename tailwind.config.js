@@ -4,7 +4,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'solana': "url('/solanaShape1.png')",
+        'cross': "url('')",
+      }
+    },
   },
   plugins: [],
 }

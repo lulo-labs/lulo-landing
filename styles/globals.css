@@ -1,3 +1,8 @@
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,10 +11,18 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: -apple-system, Fira Code, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
-  background-color:#bcfd49;
+    background: black;
+}
+
+.green-text {
+  color:#bcfd49;
+}
+
+.bg-neon-green {
+  background-color: #bcfd49;
 }
 
 a {
@@ -19,4 +32,108 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+.page1 {
+  @apply bg-gradient-to-b from-black/70 to-slate-800/70 rounded-t-3xl
+}
+
+.page2 {
+  @apply bg-gradient-to-t from-black/70 to-slate-800/70
+}
+
+.page3 {
+  @apply bg-gradient-to-b from-black/70 to-slate-800/70
+}
+
+.page4 {
+  @apply bg-gradient-to-t from-black/70 to-slate-800/70
+}
+
+.page5 {
+  @apply bg-gradient-to-b from-black/70 to-slate-800/70
+}
+
+.page6 {
+  @apply bg-gradient-to-t from-purple-900/70 to-slate-800/70
+}
+
+.page7 {
+  @apply bg-gradient-to-b from-purple-900/70 to-slate-800/70 rounded-b-3xl
+}
+
+h1{
+  @apply green-text text-2xl
+}
+
+h2{
+  @apply text-3xl text-gray-200
+}
+
+h3{
+  @apply text-xl text-gray-400
+}
+
+.pages-wrapper {
+  @apply w-full justify-center flex
+}
+
+.pages-container {
+  @apply w-[80%] h-full overflow-hidden flex flex-col 
+}
+
+.section {
+  @apply w-full flex flex-col h-screen 
+}
+
+
+.header-wrapper {
+ @apply h-20 flex items-center align-middle
+}
+
+.header-title {
+  @apply w-[200px] pl-20 
+}
+
+.buffer {
+  @apply w-full h-full p-10 
+}
+
+.vert-wrapper {
+  @apply w-full h-full p-10 text-center text-2xl 
+}
+
+.blocks-wrapper {
+  @apply w-full h-full p-20 text-center text-2xl flex flex-row 
+}
+
+.page-title {
+  @apply text-9xl green-text 
+}
+
+.page-subtitle {
+  @apply p-10 md:pb-0
+}
+
+.img-wrapper {
+
+}
+.left-block {
+  @apply w-1/2 pr-10 flex flex-col justify-center
+}
+
+.right-block {
+  @apply w-1/2 pl-10 flex flex-col justify-center
+}
+
+.footer-wrapper {
+  @apply h-20 flex items-center align-middle 
+}
+.footer {
+  @apply w-full h-[120px] flex flex-row justify-items-start
+}
+
+.copyright {
+  @apply items-end flex pb-2 text-gray-300 pl-10
 }

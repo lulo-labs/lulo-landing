@@ -136,7 +136,7 @@ h3{
 }
 
 .button-wrapper {
-  @apply absolute  px-4 top-0 left-0 w-full  flex justify-end  border border-red-500
+  @apply absolute  px-4 pt-2 top-0 left-0 w-full  flex justify-end
 }
 
 .btn-separator {
@@ -171,7 +171,7 @@ h3{
 }
 
 .page-subtitle {
-  @apply py-5  
+  @apply py-5  px-10
 }
 
 img{
@@ -257,26 +257,26 @@ h1.page-title {
 }
 
 .mc-outer {
- @apply w-full px-3 flex flex-col justify-center border border-red-300
+ @apply w-full px-3 flex flex-col justify-center 
 }
 
 .mc-subscribe {
-  @apply py-2 text-lulo-green text-lg w-full text-center  border border-red-300
+  @apply py-2 text-lulo-green text-lg w-full text-center  
 }
 .mc-inner {
-  @apply w-full flex flex-row border border-blue-300 justify-center
+  @apply w-full flex flex-row  justify-center
 }
 
 .input-and-response {
-  @apply flex flex-col border border-purple-500  md:w-[50%] max-w-[500px]
+  @apply flex flex-col   md:w-[50%] max-w-[500px] items-center
 }
 
 .input-wrapper {
-@apply px-2 w-full min-w-[200px]
+  @apply px-2 w-full min-w-[200px] pt-2
 }
 
 .mc-input {
-  @apply ring-offset-0 ring-0  focus:ring-0 focus:ring-offset-0 p-5 w-full  rounded-3xl bg-gray-600  text-gray-400
+  @apply ring-offset-0 ring-0  focus:ring-0 focus:ring-offset-0 p-3 w-full  rounded-3xl bg-gray-600  text-gray-400
 }
 
 .submit-col {

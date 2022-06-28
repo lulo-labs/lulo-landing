@@ -43,7 +43,7 @@ const Home: NextPage = () => {
 						<h2 className="page-subtitle">A Permissionless Funding Book Built for Defi 2.0</h2>
 
 						<div className="main-image img-wrapper">
-							<img src="9db52f2b-75be-4e80-b5b9-db0b112be49f.png"></img>
+							<img src="space-top.svg"></img>
 						</div>
 					</div>
 
@@ -53,7 +53,7 @@ const Home: NextPage = () => {
 						</div>
 						<div className="right-block">
 							<div className="img-wrapper">
-								<img src="6aff1e80-10c5-4036-9f4c-73df308e2155.png"></img>
+								<img src="space-2.svg"></img>
 							</div>
 						</div>
 					</div>
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
 					<div className="blocks-wrapper page3">
 						<div className="left-block">
 							<div className="img-wrapper">
-								<img src="65d3c49b-504a-49b6-8839-f0ac8a6384de.png"></img>
+								<img src="space-3.svg"></img>
 							</div>
 						</div>
 						<div className="right-block">
@@ -79,7 +79,7 @@ const Home: NextPage = () => {
 						</div>
 						<div className="right-block">
 							<div className="img-wrapper">
-								<img src="3420b4c4-2665-4f44-914f-e4fd8d41cf63.png"></img>
+								<img src="space-4.svg"></img>
 							</div>
 						</div>
 					</div>
@@ -87,42 +87,44 @@ const Home: NextPage = () => {
 					<div className="blocks-wrapper page5">
 						<div className="left-block">
 							<div className="img-wrapper">
-								<img className="pl-10 rotate-45" src="aedb5e80-6975-41d4-b6eb-ebd579b774cd.png"></img>
+								<img src="space-5.svg"></img>
 							</div>
 						</div>
 
 						<div className="right-block">
-							<h2 className="page-subtitle">Fast, cheap, transparent 2</h2>
+							<h2 className="page-subtitle">Unparalleled Risk Management</h2>
 							<h3 className="page-subtitle">
-								Place bids to Borrow, Offers to Lend, all with blazingly fast speeds and low costs
+								 Manage your credit risk with our in-house secondary markets platform
 							</h3>
 						</div>
 					</div>
 
 					<div className="blocks-wrapper page6">
 						<div className="left-block">
-							<h2 className="page-subtitle">Fast, cheap, transparent 3</h2>
+							<h2 className="page-subtitle">Lender tools</h2>
 							<h3 className="page-subtitle">
-								Place bids to Borrow, Offers to Lend, all with blazingly fast speeds and low costs
+								Parameterized loans and custom lending tools allows you to isolate your lending to specific groups or institutions
 							</h3>
 						</div>
 						<div className="right-block">
 							<div className="img-wrapper">
-								<img src="d683e4f9-312f-44b8-9b7b-44718719d479.png"></img>
+								<img src="space-6.svg"></img>
 							</div>
 						</div>
 					</div>
 
 					<div className="blocks-wrapper page7">
 						<div className="left-block">
-							<h2 className="page-subtitle">Powered by Solana</h2>
-						</div>
-
-						<div className="right-block">
-							<div className="img-wrapper">
+						<div className="img-wrapper">
 								<img src="solanaShape1.png"></img>
 							</div>
 						</div>
+			
+
+						<div className="right-block">
+						<h2 className="page-subtitle">Powered by Solana</h2>
+
+					</div>
 					</div>
 					<div className="page8">
 						<div className="mailchimp-wrapper">

@@ -101,11 +101,12 @@ const Home: NextPage = () => {
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className="footer-wrapper">
+					<div className="footer-wrapper">
 					<h1 className="footer-title">LULO</h1>
 					<div className="copyright">Copyright © 2021. All Rights Reserved</div>
 				</div>
+				</div>
+
 			</div>
 		</>
 	)

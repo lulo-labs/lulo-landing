@@ -35,11 +35,11 @@ a {
 }
 
 .pages-wrapper {
-  @apply w-screen flex flex-col items-center overflow-hidden  
+  @apply w-screen flex flex-col items-center  
 }
 
 .pages-container {
-  @apply w-screen h-full md:w-[80%] overflow-hidden  flex flex-col md:flex-col  
+  @apply w-screen h-full md:w-[80%]   flex flex-col
 }
 
 .page1 {
@@ -67,17 +67,17 @@ a {
 }
 
 .page6 {
-  @apply bg-gradient-to-t from-purple-900/70 to-slate-800/70
+  @apply  bg-gradient-to-t from-black/70 to-slate-800/70
   flex flex-col items-center
 }
 
 .page7 {
-  @apply bg-gradient-to-b from-purple-900/70 to-slate-800/70 rounded-b-3xl
+  @apply bg-gradient-to-b from-black/70 to-purple-900/70  rounded-b-3xl
   flex flex-col items-center
 }
 
 h1{
-  @apply green-text text-3xl md:text-9xl    border border-purple-400
+  @apply green-text text-3xl md:text-9xl
 }
 
 h2{
@@ -89,60 +89,60 @@ h3{
 }
 
 .header-wrapper {
-  @apply hidden md:h-20 md:flex md:items-center  border border-purple-400
+  @apply hidden md:h-20 md:flex md:items-center
 }
 
 .header-title {
-  @apply  hidden md:flex md:pl-5 md:h-10 md:visible text-lg border border-green-500 
+  @apply  hidden md:flex md:pl-5 md:h-10 md:visible text-xl 
 }
 
 
 
 
 .vert-wrapper {
-  @apply h-screen overflow-hidden p-5 flex flex-col items-center text-center justify-center pb-10 md:px-0 md:pb-10 border-4 border-purple-400
+  @apply h-screen overflow-hidden p-5 flex flex-col items-center text-center justify-center pb-10 md:px-0 md:pb-10
 }
 
 
 .blocks-wrapper {
-  @apply  h-screen py-5 overflow-scroll justify-center  text-center text-2xl md:flex-row  border border-red-400
+  @apply  h-screen py-5 overflow-scroll justify-center  text-center text-2xl md:flex-row 
 }
 
 .page-title {
-  @apply  py-10
+  @apply  py-5 
 }
 
 .page-subtitle {
-  @apply py-10  border border-blue-300
+  @apply py-5  
 }
 
 img{
-  @apply max-h-[300px]  md:max-h-[400px]
+  @apply max-h-[300px]  md:h-3/4 md:max-h-[75%]
 }
 
 .main-image {
-  @apply md:p-20 md:w-[80%]
+  @apply md:h-[70%]  md:w-[80%] 
 }
 .img-wrapper {
-  @apply     flex items-center justify-center border border-blue-300
+  @apply     flex items-center justify-center 
 }
 .left-block {
-  @apply w-screen  md:w-1/2 p-5 py-10 md:p-0 md:py-5  flex flex-col justify-center items-center md:px-5  border border-green-300
+  @apply w-screen  md:w-1/2 p-5 py-10 md:p-0 md:py-5  flex flex-col justify-center items-center md:px-5
 }
 
 .right-block {
-  @apply w-screen  md:w-1/2 p-5 py-10  md:pl-10 flex flex-col justify-center items-center md:px-5  border border-orange-300
+  @apply w-screen  md:w-1/2 p-5 py-10  md:pl-10 flex flex-col justify-center items-center md:px-5
 }
 
 .footer-wrapper {
-  @apply h-10  w-screen overflow-hidden md:h-[120px]  border border-blue-300
+  @apply h-10  w-full md:h-[120px]
       flex flex-row items-center md:justify-between md:px-10
 }
 
 .footer-title {
-  @apply invisible md:pl-5 md:h-10 md:visible text-lg
+  @apply invisible md:pl-5 md:h-10 md:visible text-xl
 }
 
 .copyright {
-  @apply text-xs text-gray-300 border border-blue-300
+  @apply text-xs text-gray-300
 }

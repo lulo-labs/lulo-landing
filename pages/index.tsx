@@ -225,7 +225,7 @@ function MailChimp({fieldRef}:{fieldRef: React.RefObject<HTMLInputElement>}) {
 
 					<div className='input-and-response'>
 
-						<div class="input-wrapper">
+						<div className="input-wrapper">
 							<input className='mc-input'
 								id="EMAIL"
 								aria-autocomplete='none'

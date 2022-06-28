@@ -5,10 +5,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'solana': "url('/solanaShape1.png')",
-        'cross': "url('')",
-      }
+        colors : {
+          'lulo-green': '#bcfd49',
+          'lulo-pink': '#f24a8b',
+        },
+        cursor : {
+          'arrowdown' : 'url(/green_down.svg), pointer',
+        }
     },
   },
   plugins: [],

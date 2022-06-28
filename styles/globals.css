@@ -3,6 +3,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,6 +17,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   background: black;
+}
+
+.pink-text {
+  color: #f24a8b;
 }
 
 .green-text {
@@ -41,6 +47,21 @@ a {
 .pages-container {
   @apply w-screen h-full md:w-[80%]   flex flex-col
 }
+
+/*
+  TODO can't remove ring
+*/
+input {
+  @apply focus:ring-0 focus:ring-offset-0;
+}
+
+input {
+  @apply ring-offset-0 ring-0
+}
+/*
+  Page color black >> slate >> purple and 
+  column <> rows layout
+*/
 
 .page1 {
   @apply bg-gradient-to-b from-black/70 to-slate-800/70 rounded-t-3xl
@@ -72,12 +93,19 @@ a {
 }
 
 .page7 {
-  @apply bg-gradient-to-b from-black/70 to-purple-900/70  rounded-b-3xl
+  @apply bg-gradient-to-b from-black/70 to-purple-900/70
   flex flex-col items-center
 }
 
+.page8 {
+  @apply bg-gradient-to-t  to-purple-900/70  from-black/70  rounded-b-3xl
+  flex flex-row items-center
+}
+
+
+
 h1{
-  @apply green-text text-3xl md:text-9xl
+  @apply green-text text-3xl md:text-9xl  
 }
 
 h2{
@@ -94,18 +122,57 @@ h3{
 
 .header-title {
   @apply  hidden md:flex md:pl-5 md:h-10 md:visible text-xl 
+
+}
+
+/*
+  Main Body
+*/
+
+
+
+.main-wrapper {
+  @apply h-screen relative overflow-hidden p-5 flex flex-col items-center text-center justify-center pb-10 md:px-0 md:pb-10
+}
+
+
+/*
+.submit-grad-wrapper {
+  @apply lulo-animate rounded-full p-[2px] max-h-[64px] 
+  bg-gradient-to-r from-lulo-pink to-lulo-green mr-10
+}
+
+.mc-button {
+  @apply min-w-[120px] max-h-[70px]  px-[15px] py-[20px] text-gray-300
+}
+
+
+*/
+.button-wrapper {
+  @apply absolute p-2 top-0 right-5 w-[25%] flex justify-between 
+}
+
+.btn-grad-wrapper {
+  @apply lulo-animate rounded-full p-[2px] max-h-[60px] 
+  bg-gradient-to-r from-lulo-pink to-lulo-green
 }
 
 
 
-
-.vert-wrapper {
-  @apply h-screen overflow-hidden p-5 flex flex-col items-center text-center justify-center pb-10 md:px-0 md:pb-10
+.contact-button {
+  @apply min-w-[20px] max-h-[70px]  px-[15px] py-[20px] p-5  bg-gray-800 text-white rounded-full text-xs cursor-arrowdown
+      
 }
+
+.app-button {
+  @apply min-w-[20px] max-h-[70px]   px-[15px] py-[20px] bg-gray-900 text-white rounded-full text-xs border-2 border-gray-800 
+}
+
+
 
 
 .blocks-wrapper {
-  @apply  h-screen py-5 overflow-scroll justify-center  text-center text-2xl md:flex-row 
+  @apply  h-screen py-5  justify-center  text-center text-2xl md:flex-row 
 }
 
 .page-title {
@@ -134,15 +201,113 @@ img{
   @apply w-screen  md:w-1/2 p-5 py-10  md:pl-10 flex flex-col justify-center items-center md:px-5
 }
 
+
+/*
+  Footer
+*/
 .footer-wrapper {
   @apply h-10  w-full md:h-[120px]
-      flex flex-row items-center md:justify-between md:px-10
+      flex flex-row items-center justify-between md:px-10
 }
 
 .footer-title {
-  @apply invisible md:pl-5 md:h-10 md:visible text-xl
+  @apply px-5 md:pl-5 md:h-10 md:visible text-xl
 }
 
 .copyright {
-  @apply text-xs text-gray-300
+  @apply text-xs text-gray-300 px-2
+}
+
+
+
+
+/*
+  Title Animation
+*/
+
+
+h1.page-title {
+  @apply text-transparent bg-clip-text lulo-animate
+      bg-gradient-to-r from-lulo-pink to-lulo-green
+} 
+
+@keyframes lulo2 {
+  100% {
+    background-position: 0 0, 0 0;
+    @apply bg-gradient-to-r from-pink-400 to-green-400
+  }
+}
+
+.lulo-animate {
+  background-size: 400%;
+
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 3s ease infinite;
+}
+
+@keyframes AnimationName {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+
+/*
+  Mailchimp
+*/
+
+.mailchimp-wrapper {
+  @apply w-full flex flex-row justify-center
+}
+
+.mc-outer {
+ @apply w-full px-3 flex flex-col justify-center border border-red-300
+}
+
+.mc-subscribe {
+  @apply py-2 text-lulo-green text-lg w-full text-center  border border-red-300
+}
+.mc-inner {
+  @apply w-full flex flex-row border border-blue-300 justify-center
+}
+
+.input-and-response {
+  @apply flex flex-col border border-purple-500  md:w-[50%] max-w-[500px]
+}
+
+.input-wrapper {
+@apply px-2 w-full min-w-[200px]
+}
+
+.mc-input {
+  @apply ring-offset-0 ring-0  focus:ring-0 focus:ring-offset-0 p-5 w-full  rounded-3xl bg-gray-600  text-gray-400
+}
+
+.submit-col {
+  @apply  flex flex-row justify-center px-2
+}
+.submit-grad-wrapper {
+  @apply lulo-animate rounded-full p-[2px] max-h-[64px]  
+  bg-gradient-to-r from-lulo-pink to-lulo-green
+}
+
+.mc-button {
+  @apply min-w-[120px] max-h-[70px]  px-[15px] py-[20px] text-gray-300
+}
+
+.mc-response {
+  @apply pl-5 py-1 min-h-[40px] text-gray-500
+}
+
+.mc-loading .mc-success {
+  @apply text-gray-500
+}
+
+.mc-error {
+  @apply text-red-300 text-xs
 }

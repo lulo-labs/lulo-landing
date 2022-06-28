@@ -15,9 +15,7 @@ const Home: NextPage = () => {
 						<h1 className="header-title">LULO</h1>
 					</div>
 
-					<div className="section page1">
-						<div className="buffer">
-							<div className="vert-wrapper">
+							<div className="vert-wrapper page1">
 								<div className="page-title">LULO</div>
 								<h2 className="page-subtitle">A Permissionless Funding Book Built for Defi 2.0</h2>
 
@@ -25,30 +23,22 @@ const Home: NextPage = () => {
 									<img className="object-scale-down" src="9db52f2b-75be-4e80-b5b9-db0b112be49f.png"></img>
 								</div>
 							</div>
-						</div>
-					</div>
-
-					<div className="section page2">
-						<div className="buffer">
-							<div className="blocks-wrapper">
+					
+							<div className="blocks-wrapper page2">
 								<div className="left-block">
 									<h2 className="page-subtitle">Experience Lending Built with the Transparency of an Order Book</h2>
 								</div>
 								<div className="right-block">
 									<div className="img-wrapper">
-										<img src="6aff1e80-10c5-4036-9f4c-73df308e2155.png"></img>
+										<img style={{maxHeight: '150px'}} src="6aff1e80-10c5-4036-9f4c-73df308e2155.png"></img>
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
 
-					<div className="section page3">
-						<div className="buffer">
-							<div className="blocks-wrapper">
+							<div className="blocks-wrapper page3">
 								<div className="left-block">
 									<div className="img-wrapper">
-										<img src="65d3c49b-504a-49b6-8839-f0ac8a6384de.png"></img>
+										<img style={{maxHeight: '150px'}} src="65d3c49b-504a-49b6-8839-f0ac8a6384de.png"></img>
 									</div>
 								</div>
 								<div className="right-block">
@@ -56,12 +46,8 @@ const Home: NextPage = () => {
 									<h3 className="page-subtitle">Seamlessly integrated with all of your favorite platforms</h3>
 								</div>
 							</div>
-						</div>
-					</div>
 
-					<div className="section page4">
-						<div className="buffer">
-							<div className="blocks-wrapper">
+							<div className="blocks-wrapper page4">
 								<div className="left-block">
 									<h2 className="page-subtitle">Fast, cheap, transparent</h2>
 									<h3 className="page-subtitle">
@@ -70,19 +56,15 @@ const Home: NextPage = () => {
 								</div>
 								<div className="right-block">
 									<div className="img-wrapper">
-										<img src="3420b4c4-2665-4f44-914f-e4fd8d41cf63.png"></img>
+										<img style={{maxHeight: '150px'}} src="3420b4c4-2665-4f44-914f-e4fd8d41cf63.png"></img>
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-
-					<div className="section page5">
-						<div className="buffer">
-							<div className="blocks-wrapper">
+					
+							<div className="blocks-wrapper page5">
 								<div className="left-block">
 									<div className="img-wrapper">
-										<img className="pl-20 rotate-45" src="aedb5e80-6975-41d4-b6eb-ebd579b774cd.png"></img>
+										<img style={{maxHeight: '150px'}} className="pl-20 rotate-45" src="aedb5e80-6975-41d4-b6eb-ebd579b774cd.png"></img>
 									</div>
 								</div>
 
@@ -93,12 +75,8 @@ const Home: NextPage = () => {
 									</h3>
 								</div>
 							</div>
-						</div>
-					</div>
 
-					<div className="section page6">
-						<div className="buffer">
-							<div className="blocks-wrapper">
+							<div className="blocks-wrapper page6">
 								<div className="left-block">
 									<h2 className="page-subtitle">Fast, cheap, transparent 3</h2>
 									<h3 className="page-subtitle">
@@ -107,32 +85,28 @@ const Home: NextPage = () => {
 								</div>
 								<div className="right-block">
 									<div className="img-wrapper">
-										<img src="d683e4f9-312f-44b8-9b7b-44718719d479.png"></img>
+										<img style={{maxHeight: '150px'}} src="d683e4f9-312f-44b8-9b7b-44718719d479.png"></img>
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
 
-					<div id="solana-section" className="section page7">
-						<div className="buffer">
-							<div className="blocks-wrapper">
+							<div className="blocks-wrapper page7">
 								<div className="left-block">
 									<h2 className="page-subtitle">Powered by Solana</h2>
 								</div>
 
-								<div className="right-block pl-10">
-									<img className="max-w-xs" src="solanaShape1.png" />
+								<div className="right-block">
+									<div className="img-wrapper">
+										<img style={{maxHeight: '150px'}} src="solanaShape1.png"></img>
+									</div>
 								</div>
 							</div>
-						</div>
 					</div>
 					<div className="footer-wrapper">
-						<h1 className="header-title">LULO</h1>
-						<div className="copyright">Copyright © 2021 . All Rights Reserved</div>
+						<h1 className="footer-title">LULO</h1>
+						<div className="copyright">Copyright © 2021. All Rights Reserved</div>
 					</div>
 				</div>
-			</div>
 		</>
 	)
 }

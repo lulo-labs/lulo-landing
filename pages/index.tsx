@@ -87,7 +87,7 @@ const Home: NextPage = () => {
 					<div className="blocks-wrapper page5">
 						<div className="left-block">
 							<div className="img-wrapper">
-								<img src="space-5.svg"></img>
+								<img src="space-5-new.svg"></img>
 							</div>
 						</div>
 

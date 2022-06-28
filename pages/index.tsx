@@ -217,7 +217,7 @@ function MailChimp({fieldRef}:{fieldRef: React.RefObject<HTMLInputElement>}) {
 	  }
 
 	return (
-		<div className='mc-outer'>
+		<div ref={fieldRef} className='mc-outer'>
 			<div className='mc-subscribe' >
 				Subscribe to stay up to date on our latest announcements
 			</div>

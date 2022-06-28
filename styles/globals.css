@@ -120,11 +120,11 @@ h3{
 }
 
 img {
-
+  @apply max-h-[200px]
 }
 
 .img-wrapper {
-  @apply max-h-[200px] p-5 md:max-h-[400px]  flex items-center border border-blue-300
+  @apply  p-5 md:max-h-[400px]  flex items-center border border-blue-300
 }
 .left-block {
   @apply w-screen  lg:w-1/2 p-5 py-10  flex flex-col justify-center items-center md:px-[60px]  border border-green-300

@@ -12,16 +12,17 @@ const Home: NextPage = () => {
 				<div className="pages-container">
 
 					<div className="header-wrapper">
-						<h1 className="header-title">LULO</h1>
+						<div className="header-title">LULO</div>
 					</div>
 
 							<div className="vert-wrapper page1">
-								<div className="page-title">LULO</div>
+								<h1 className="page-title">LULO</h1>
 								<h2 className="page-subtitle">A Permissionless Funding Book Built for Defi 2.0</h2>
 
-								<div className="img-wrapper flex justify-center p-5">
-									<img className="object-scale-down" src="9db52f2b-75be-4e80-b5b9-db0b112be49f.png"></img>
+								<div className="img-wrapper">
+									<img src="9db52f2b-75be-4e80-b5b9-db0b112be49f.png"></img>
 								</div>
+								
 							</div>
 					
 							<div className="blocks-wrapper page2">
@@ -30,21 +31,23 @@ const Home: NextPage = () => {
 								</div>
 								<div className="right-block">
 									<div className="img-wrapper">
-										<img style={{maxHeight: '150px'}} src="6aff1e80-10c5-4036-9f4c-73df308e2155.png"></img>
+										<img  src="6aff1e80-10c5-4036-9f4c-73df308e2155.png"></img>
 									</div>
 								</div>
+								
 							</div>
 
 							<div className="blocks-wrapper page3">
 								<div className="left-block">
 									<div className="img-wrapper">
-										<img style={{maxHeight: '150px'}} src="65d3c49b-504a-49b6-8839-f0ac8a6384de.png"></img>
+										<img  src="65d3c49b-504a-49b6-8839-f0ac8a6384de.png"></img>
 									</div>
 								</div>
 								<div className="right-block">
 									<h2 className="page-subtitle">Composable, Permissionless</h2>
 									<h3 className="page-subtitle">Seamlessly integrated with all of your favorite platforms</h3>
 								</div>
+								
 							</div>
 
 							<div className="blocks-wrapper page4">
@@ -56,15 +59,16 @@ const Home: NextPage = () => {
 								</div>
 								<div className="right-block">
 									<div className="img-wrapper">
-										<img style={{maxHeight: '150px'}} src="3420b4c4-2665-4f44-914f-e4fd8d41cf63.png"></img>
+										<img  src="3420b4c4-2665-4f44-914f-e4fd8d41cf63.png"></img>
 									</div>
 								</div>
+								
 							</div>
 					
 							<div className="blocks-wrapper page5">
 								<div className="left-block">
 									<div className="img-wrapper">
-										<img style={{maxHeight: '150px'}} className="pl-20 rotate-45" src="aedb5e80-6975-41d4-b6eb-ebd579b774cd.png"></img>
+										<img  className="pl-20 rotate-45" src="aedb5e80-6975-41d4-b6eb-ebd579b774cd.png"></img>
 									</div>
 								</div>
 
@@ -74,6 +78,7 @@ const Home: NextPage = () => {
 										Place bids to Borrow, Offers to Lend, all with blazingly fast speeds and low costs
 									</h3>
 								</div>
+								
 							</div>
 
 							<div className="blocks-wrapper page6">
@@ -85,9 +90,10 @@ const Home: NextPage = () => {
 								</div>
 								<div className="right-block">
 									<div className="img-wrapper">
-										<img style={{maxHeight: '150px'}} src="d683e4f9-312f-44b8-9b7b-44718719d479.png"></img>
+										<img  src="d683e4f9-312f-44b8-9b7b-44718719d479.png"></img>
 									</div>
 								</div>
+								
 							</div>
 
 							<div className="blocks-wrapper page7">
@@ -97,9 +103,10 @@ const Home: NextPage = () => {
 
 								<div className="right-block">
 									<div className="img-wrapper">
-										<img style={{maxHeight: '150px'}} src="solanaShape1.png"></img>
+										<img  src="solanaShape1.png"></img>
 									</div>
 								</div>
+								
 							</div>
 					</div>
 					<div className="footer-wrapper">

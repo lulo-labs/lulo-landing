@@ -132,24 +132,15 @@ h3{
 
 
 .main-wrapper {
-  @apply h-screen relative overflow-hidden p-5 flex flex-col items-center text-center justify-center pb-10 md:px-0 md:pb-10
+  @apply h-screen relative overflow-hidden p-5 flex flex-col items-center text-center justify-center  md:px-0 md:pt-20
 }
 
-
-/*
-.submit-grad-wrapper {
-  @apply lulo-animate rounded-full p-[2px] max-h-[64px] 
-  bg-gradient-to-r from-lulo-pink to-lulo-green mr-10
-}
-
-.mc-button {
-  @apply min-w-[120px] max-h-[70px]  px-[15px] py-[20px] text-gray-300
-}
-
-
-*/
 .button-wrapper {
-  @apply absolute p-2 top-0 right-5 w-[25%] flex justify-between 
+  @apply absolute  px-4 top-0 left-0 w-full  flex justify-end  border border-red-500
+}
+
+.btn-separator {
+  @apply w-5 xl:w-10
 }
 
 .btn-grad-wrapper {

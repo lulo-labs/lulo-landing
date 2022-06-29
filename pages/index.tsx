@@ -124,7 +124,7 @@ const Home: NextPage = () => {
 
 					<div className="blocks-wrapper page6">
 						<div className="left-block">
-							<h2 className="page-subtitle">Let us know if you're interested in joining the Alpha</h2>
+							<h2 className="page-subtitle">Let us know if you&apos;re interested in joining the Alpha</h2>
 					</div>
 					
 					<div className='right-block' >

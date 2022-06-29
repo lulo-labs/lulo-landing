@@ -197,11 +197,11 @@ img {
 */
 
 .mailchimp-wrapper {
-  @apply w-full h-full  border border-blue-500
+  @apply w-full h-full  
 }
 
 .mc-outer {
- @apply w-full h-full flex flex-col lg:flex-row items-center justify-center border border-green-500
+ @apply w-full h-full flex flex-col lg:flex-row items-center justify-center 
 }
 
 .input-response {
@@ -258,42 +258,38 @@ input {
 */
 
 .footer-wrapper {
-  @apply w-full flex flex-col md:flex-row items-center  border border-red-500 px-5
+  @apply w-full flex flex-col md:flex-row items-center px-2
 }
 
 .footer-title {
-  @apply w-full md:h-10 md:pl-5 text-lulo-green text-2xl md:text-3xl border border-orange-500 
+  @apply w-full md:h-10 md:pl-5 md:w-[25%] text-lulo-green text-center md:text-start text-4xl 
 }
 
 .links-bar {
-  @apply w-full flex flex-row max-h-[90px] px-2 py-5 border-2 border-green-500 justify-between
+  @apply w-[50%] flex flex-row max-h-[90px] px-2 py-5  justify-center
 }
 
 .links-bar div {
-  @apply flex items-center justify-center  border-2 border-blue-500
+  @apply flex items-center justify-center
 }
-
 
 .solana-wrapper { 
-  @apply flex flex-row max-h-[50px]   w-full justify-end  border border-blue-500 
-}
-.buffer {
-  @apply md:w-[10%] border-2 border-green-500
-}
-.solana-img-wrapper {
-  @apply flex border border-red-500 w-[25%] items-center justify-end 
-}
-.solana-img {
-  @apply  object-scale-down border  border-green-500   
-}
-.solana-label {
- @apply text-xs p-4 md:p-2 light-gray border  border-purple-500 justify-center
+  @apply flex flex-row max-h-[50px] md:w-[25%]  w-full justify-center
 }
 
+.solana-img-wrapper {
+  @apply flex  items-center justify-center  max-h-[40px]
+}
+.solana-img {
+  @apply  object-scale-down 
+}
+.solana-label {
+ @apply text-xs p-2 light-gray justify-start text-left
+}
 
 
 .copyright {
-  @apply w-full md:h-10  text-xs md:text-base text-center light-gray border border-green-500
+  @apply w-full md:h-10 py-5  text-xs md:text-base text-center light-gray
 }
 
 /*

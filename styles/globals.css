@@ -117,11 +117,11 @@ h3{
 }
 
 .header-wrapper {
-  @apply hidden md:h-20 md:flex md:items-center border border-green-200
+  @apply hidden md:h-20 md:flex md:items-center
 }
 
 .header-title {
-  @apply  hidden md:flex md:pl-5 md:h-10 md:visible text-4xl items-center  border border-blue-500
+  @apply  hidden md:flex md:pl-5 md:h-10 md:visible text-4xl items-center
 
 }
 

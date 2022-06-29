@@ -115,15 +115,15 @@ const Home: NextPage = () => {
 
 					<div className="blocks-wrapper page7">
 						<div className="left-block">
-						<div className="img-wrapper">
-								<img src="solanaShape1.png"></img>
-							</div>
+						<h2 className="page-subtitle">Powered by Solana</h2>
+
 						</div>
 			
 
 						<div className="right-block">
-						<h2 className="page-subtitle">Powered by Solana</h2>
-
+						<div className="img-wrapper">
+								<img src="solanaShape1.png"></img>
+							</div>
 					</div>
 					</div>
 					<div className="page8">
@@ -132,7 +132,7 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 					<div className="footer-wrapper">
-					<h1 className="footer-title">LULO</h1>
+					<h3 className="footer-title">LULO</h3>
 					<div className="copyright">Copyright © 2022. All Rights Reserved</div>
 				</div>
 				</div>

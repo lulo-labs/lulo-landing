@@ -45,7 +45,7 @@ a {
 }
 
 .pages-container {
-  @apply w-screen h-full md:w-[80%]   flex flex-col
+  @apply w-screen h-full md:w-[80%] flex flex-col
 }
 
 /*
@@ -64,64 +64,64 @@ input {
 */
 
 .page1 {
-  @apply bg-gradient-to-b from-black/70 to-slate-800/70 rounded-t-3xl
+  @apply bg-gradient-to-t from-black/70 to-slate-800/70 rounded-t-3xl
 }
 
 .page2 {
-  @apply bg-gradient-to-t from-black/70 to-slate-800/70
+  @apply bg-gradient-to-b from-black/70 to-slate-800/70
       flex flex-col items-center
 }
 
 .page3 {
-  @apply bg-gradient-to-b from-black/70 to-slate-800/70
+  @apply bg-gradient-to-t from-black/70 to-slate-800/70
         flex flex-col-reverse items-center
 }
 
 .page4 {
-  @apply bg-gradient-to-t from-black/70 to-slate-800/70
+  @apply bg-gradient-to-b from-black/70 to-slate-800/70
   flex flex-col items-center
 }
 
 .page5 {
-  @apply bg-gradient-to-b from-black/70 to-slate-800/70
+  @apply bg-gradient-to-t from-black/70 to-slate-800/70
   flex flex-col-reverse items-center
 }
 
 .page6 {
-  @apply  bg-gradient-to-t from-black/70 to-slate-800/70
+  @apply  bg-gradient-to-b from-black/70 to-slate-800/70
   flex flex-col items-center
 }
 
 .page7 {
-  @apply bg-gradient-to-b from-black/70 to-purple-900/70
+  @apply bg-gradient-to-b from-slate-800/70 to-purple-900/70
   flex flex-col items-center
 }
 
 .page8 {
-  @apply bg-gradient-to-t  to-purple-900/70  from-black/70  rounded-b-3xl
+  @apply bg-gradient-to-t  to-purple-900/70  from-slate-800/70  rounded-b-3xl
   flex flex-row items-center
 }
 
 
 
 h1{
-  @apply green-text text-3xl md:text-9xl  
+  @apply green-text text-6xl md:text-9xl  
 }
 
 h2{
-  @apply text-base text-gray-200
+  @apply text-2xl text-gray-200
 }
 
 h3{
-  @apply text-sm text-gray-400
+  @apply text-lg text-gray-400
 }
 
 .header-wrapper {
-  @apply hidden md:h-20 md:flex md:items-center
+  @apply hidden md:h-20 md:flex md:items-center border border-green-200
 }
 
 .header-title {
-  @apply  hidden md:flex md:pl-5 md:h-10 md:visible text-xl 
+  @apply  hidden md:flex md:pl-5 md:h-10 md:visible text-4xl items-center  border border-blue-500
 
 }
 
@@ -132,11 +132,11 @@ h3{
 
 
 .main-wrapper {
-  @apply h-screen relative overflow-hidden p-5 flex flex-col items-center text-center justify-center  md:px-0 md:pt-20
+  @apply h-screen relative p-5 flex flex-col items-center text-center justify-center  md:px-0 md:pt-20
 }
 
 .button-wrapper {
-  @apply absolute  px-4 pt-2 top-0 left-0 w-full  flex justify-end
+  @apply absolute top-0 left-0 px-4 pt-2 md:top-[-77px] w-full  flex justify-end
 }
 
 .btn-separator {
@@ -202,7 +202,7 @@ img{
 }
 
 .footer-title {
-  @apply px-5 md:pl-5 md:h-10 md:visible text-xl
+  @apply px-5 md:pl-5 md:h-10 green-text text-2xl md:text-3xl
 }
 
 .copyright {

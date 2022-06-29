@@ -40,7 +40,9 @@ const Home: NextPage = () => {
 						<h1 className="page-title">LULO</h1>
 						<h2 className="page-subtitle">A Permissionless Lending Order Book</h2>
 
-						<h3 className="page-subtitle">Lulo is a DeFI lending primitive that focuses on capital efficiency, composability, and risk management </h3>
+						<h3 className="page-subtitle">
+							Lulo is a DeFI lending primitive that focuses on capital efficiency, composability, and risk management{' '}
+						</h3>
 						<div className="main-image img-wrapper">
 							<img src="space-top.svg"></img>
 						</div>
@@ -50,8 +52,8 @@ const Home: NextPage = () => {
 						<div className="left-block">
 							<h2 className="page-subtitle">Blazingly fast, cheap, and transparent</h2>
 							<h3 className="page-subtitle">
-								Lenders and borrowers bid/offer at their desired rates and are matched transparently on-chain using our 
-									lending order book. Loans have fixed terms, ensuring you can manage your funding precisely.
+								Lenders and borrowers bid/offer at their desired rates and are matched transparently on-chain using our
+								lending order book. Loans have fixed terms, ensuring you can manage your funding precisely.
 							</h3>
 						</div>
 						<div className="right-block">
@@ -70,8 +72,8 @@ const Home: NextPage = () => {
 						<div className="right-block">
 							<h2 className="page-subtitle">10x your DeFi protocols</h2>
 							<h3 className="page-subtitle">
-								Lulo seamlessly integrates with all your favorite DeFi trading platforms to offer more flexibility, 
-									capital efficiency and risk management to traders.
+								Lulo seamlessly integrates with all your favorite DeFi trading platforms to offer more flexibility,
+								capital efficiency and risk management to traders.
 							</h3>
 						</div>
 					</div>
@@ -80,8 +82,8 @@ const Home: NextPage = () => {
 						<div className="left-block">
 							<h2 className="page-subtitle">Tradeable Credit</h2>
 							<h3 className="page-subtitle">
-								Arbitrage rates, refinance for better terms, and hedge your risk 
-									with native secondary markets that allow you to tokenize and trade loans.
+								Arbitrage rates, refinance for better terms, and hedge your risk with native secondary markets that
+								allow you to tokenize and trade loans.
 							</h3>
 						</div>
 						<div className="right-block">
@@ -101,8 +103,8 @@ const Home: NextPage = () => {
 						<div className="right-block">
 							<h2 className="page-subtitle">Advanced Lender Tooling</h2>
 							<h3 className="page-subtitle">
-								Parameterized loans and custom lending tools allows you to 
-									isolate your lending to specific groups or institutions
+								Parameterized loans and custom lending tools allows you to isolate your lending to specific groups or
+								institutions
 							</h3>
 						</div>
 					</div>
@@ -111,8 +113,8 @@ const Home: NextPage = () => {
 						<div className="left-block">
 							<h2 className="page-subtitle">Join Our Alpha</h2>
 							<h3 className="page-subtitle">
-								We are interested in working with market makers, lenders, and traders who want to help us build scalable DeFi lending. 
-									Submit your email so we can get in touch.
+								We are interested in working with market makers, lenders, and traders who want to help us build scalable
+								DeFi lending. Submit your email so we can get in touch.
 							</h3>
 						</div>
 						<div className="right-block">
@@ -125,10 +127,10 @@ const Home: NextPage = () => {
 					<div className="blocks-wrapper page6">
 						<div className="left-block">
 							<h2 className="page-subtitle">Let us know if you&apos;re interested in joining the Alpha</h2>
-					</div>
-					
-					<div className='right-block' >
-						<div className="mailchimp-wrapper">
+						</div>
+
+						<div className="right-block">
+							<div className="mailchimp-wrapper">
 								<MailChimp fieldRef={fieldRef} />
 							</div>
 						</div>
@@ -137,18 +139,23 @@ const Home: NextPage = () => {
 					<div className="footer-wrapper">
 						<h3 className="footer-title">LULO</h3>
 						<div className="links-bar">
-							<div className="twitter"> <img className='twitter-img' src="twitter_icon.png"/></div>
-							<div className="discord"> <img className='discord-img' src="discord_2.png"/></div>
-							<div className="telegram"> <img className='telegram-img' src="telegram_icon.png"/></div>
+							<a className="twitter" href="https://twitter.com/lulo_finance" target="_blank">
+								<img className="twitter-img" src="twitter_icon.png" />
+							</a>
+							<a className="discord" href="https://discord.com/invite/ahrDazzyqG" target="_blank">
+								<img className="discord-img" src="discord_2.png" />
+							</a>
+							<a className="telegram" href="https://t.me/lulo_finance" target="_blank">
+								<img className="telegram-img" src="telegram_icon.png" />
+							</a>
 						</div>
 						<div className="solana-wrapper">
-							<span className='buffer' />			
-							<span className='solana-img-wrapper'>
-								<img className='solana-img' src="solanaLogoMark.png"></img>
+							<span className="buffer" />
+							<span className="solana-img-wrapper">
+								<img className="solana-img" src="solanaLogoMark.png" />
 							</span>
 							<h3 className="solana-label">Powered by Solana</h3>
 						</div>
-
 					</div>
 					<div className="copyright">Copyright © 2022. All Rights Reserved</div>
 				</div>
@@ -212,37 +219,35 @@ function MailChimp({ fieldRef }: { fieldRef: React.RefObject<HTMLInputElement> }
 
 	return (
 		<div ref={fieldRef} className="mc-outer">
-			
-				<div className="input-response">
-					<div className="input-wrapper">
-						<input
-							className="mc-input"
-							id="EMAIL"
-							aria-autocomplete="none"
-							autoFocus={false}
-							autoComplete={'false'}
-							autoCorrect={'false'}
-							type="email"
-							value={emailAddress}
-							placeholder="Email..."
-							onChange={handleFieldChange}
-						/>
-					</div>
-
-
-					<div className="mc-response">
-						{loading && <div className="mc-loading"> {loading} </div>}
-						{error && <div className="mc-error"> {message} </div>}
-						{errorMsg && <div className="mc-error"> {errorMsg} </div>}
-						{success && <div className="mc-success"> {message} </div>}
-					</div>
+			<div className="input-response">
+				<div className="input-wrapper">
+					<input
+						className="mc-input"
+						id="EMAIL"
+						aria-autocomplete="none"
+						autoFocus={false}
+						autoComplete={'false'}
+						autoCorrect={'false'}
+						type="email"
+						value={emailAddress}
+						placeholder="Email..."
+						onChange={handleFieldChange}
+					/>
 				</div>
-				<div className="submit-col">
-					<div className="submit-grad-wrapper">
-						<button onClick={submitClick} className="app-button mc-button">
-							Join Alpha
-						</button>
-					</div>
+
+				<div className="mc-response">
+					{loading && <div className="mc-loading"> {loading} </div>}
+					{error && <div className="mc-error"> {message} </div>}
+					{errorMsg && <div className="mc-error"> {errorMsg} </div>}
+					{success && <div className="mc-success"> {message} </div>}
+				</div>
+			</div>
+			<div className="submit-col">
+				<div className="submit-grad-wrapper">
+					<button onClick={submitClick} className="app-button mc-button">
+						Join Alpha
+					</button>
+				</div>
 			</div>
 		</div>
 	)

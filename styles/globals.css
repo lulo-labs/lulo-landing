@@ -269,7 +269,7 @@ input {
   @apply w-[50%] flex flex-row max-h-[90px] px-2 py-5  justify-center
 }
 
-.links-bar div {
+.links-bar a {
   @apply flex items-center justify-center
 }
 

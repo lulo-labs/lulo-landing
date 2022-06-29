@@ -139,13 +139,13 @@ const Home: NextPage = () => {
 					<div className="footer-wrapper">
 						<h3 className="footer-title">LULO</h3>
 						<div className="links-bar">
-							<a className="twitter" href="https://twitter.com/lulo_finance" target="_blank">
+							<a className="twitter" href="https://twitter.com/lulo_finance" target="_blank" rel="noreferrer">
 								<img className="twitter-img" src="twitter_icon.png" />
 							</a>
-							<a className="discord" href="https://discord.com/invite/ahrDazzyqG" target="_blank">
+							<a className="discord" href="https://discord.com/invite/ahrDazzyqG" target="_blank" rel="noreferrer">
 								<img className="discord-img" src="discord_2.png" />
 							</a>
-							<a className="telegram" href="https://t.me/lulo_finance" target="_blank">
+							<a className="telegram" href="https://t.me/lulo_finance" target="_blank" rel="noreferrer">
 								<img className="telegram-img" src="telegram_icon.png" />
 							</a>
 						</div>

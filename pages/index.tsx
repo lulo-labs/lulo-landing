@@ -23,11 +23,11 @@ const Home: NextPage = () => {
 						<h1 className="header-title">LULO</h1>
 					</div>
 
-					<div className="main-wrapper page1">
+					<div className="main-wrapper main-page">
 						<div className="button-wrapper">
 							<div className="btn-grad-wrapper">
 								<button id="ctcbtn" onClick={scrollToBottom} className="contact-button">
-									Contact
+									Join Alpha
 								</button>
 							</div>
 							<div className="btn-separator" />
@@ -38,16 +38,21 @@ const Home: NextPage = () => {
 							</div>
 						</div>
 						<h1 className="page-title">LULO</h1>
-						<h2 className="page-subtitle">A Permissionless Funding Book Built for Defi 2.0</h2>
+						<h2 className="page-subtitle">A Permissionless Lending Order Book</h2>
 
+						<h3 className="page-subtitle">Lulo is a DeFI lending primitive that focuses on capital efficiency, composability, and risk management </h3>
 						<div className="main-image img-wrapper">
 							<img src="space-top.svg"></img>
 						</div>
 					</div>
 
-					<div className="blocks-wrapper page2">
+					<div className="blocks-wrapper page1">
 						<div className="left-block">
-							<h2 className="page-subtitle">Experience Lending Built with the Transparency of an Order Book</h2>
+							<h2 className="page-subtitle">Blazingly fast, cheap, and transparent</h2>
+							<h3 className="page-subtitle">
+								Lenders and borrowers bid/offer at their desired rates and are matched transparently on-chain using our 
+									lending order book. Loans have fixed terms, ensuring you can manage your funding precisely.
+							</h3>
 						</div>
 						<div className="right-block">
 							<div className="img-wrapper">
@@ -56,23 +61,27 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 
-					<div className="blocks-wrapper page3">
+					<div className="blocks-wrapper page2">
 						<div className="left-block">
 							<div className="img-wrapper">
 								<img src="space-3.svg"></img>
 							</div>
 						</div>
 						<div className="right-block">
-							<h2 className="page-subtitle">Composable, Permissionless</h2>
-							<h3 className="page-subtitle">Seamlessly integrated with all of your favorite platforms</h3>
+							<h2 className="page-subtitle">10x your DeFi protocols</h2>
+							<h3 className="page-subtitle">
+								Lulo seamlessly integrates with all your favorite DeFi trading platforms to offer more flexibility, 
+									capital efficiency and risk management to traders.
+							</h3>
 						</div>
 					</div>
 
-					<div className="blocks-wrapper page4">
+					<div className="blocks-wrapper page3">
 						<div className="left-block">
-							<h2 className="page-subtitle">Fast, cheap, transparent</h2>
+							<h2 className="page-subtitle">Tradeable Credit</h2>
 							<h3 className="page-subtitle">
-								Place bids to Borrow, Offers to Lend, all with blazingly fast speeds and low costs
+								Arbitrage rates, refinance for better terms, and hedge your risk 
+									with native secondary markets that allow you to tokenize and trade loans.
 							</h3>
 						</div>
 						<div className="right-block">
@@ -82,7 +91,7 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 
-					<div className="blocks-wrapper page5">
+					<div className="blocks-wrapper page4">
 						<div className="left-block">
 							<div className="img-wrapper">
 								<img src="space-5-new.svg"></img>
@@ -90,17 +99,20 @@ const Home: NextPage = () => {
 						</div>
 
 						<div className="right-block">
-							<h2 className="page-subtitle">Unparalleled Risk Management</h2>
-							<h3 className="page-subtitle">Manage your credit risk with our in-house secondary markets platform</h3>
+							<h2 className="page-subtitle">Advanced Lender Tooling</h2>
+							<h3 className="page-subtitle">
+								Parameterized loans and custom lending tools allows you to 
+									isolate your lending to specific groups or institutions
+							</h3>
 						</div>
 					</div>
 
-					<div className="blocks-wrapper page6">
+					<div className="blocks-wrapper page5">
 						<div className="left-block">
-							<h2 className="page-subtitle">Lender tools</h2>
+							<h2 className="page-subtitle">Join Our Alpha</h2>
 							<h3 className="page-subtitle">
-								Parameterized loans and custom lending tools allows you to isolate your lending to specific groups or
-								institutions
+								We are interested in working with market makers, lenders, and traders who want to help us build scalable DeFi lending. 
+									Submit your email so we can get in touch.
 							</h3>
 						</div>
 						<div className="right-block">
@@ -110,26 +122,35 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 
-					<div className="blocks-wrapper page7">
+					<div className="blocks-wrapper page6">
 						<div className="left-block">
-							<h2 className="page-subtitle">Powered by Solana</h2>
-						</div>
-
-						<div className="right-block">
-							<div className="img-wrapper">
-								<img src="solanaShape1.png"></img>
+							<h2 className="page-subtitle">Let us know if you're interested in joining the Alpha</h2>
+					</div>
+					
+					<div className='right-block' >
+						<div className="mailchimp-wrapper">
+								<MailChimp fieldRef={fieldRef} />
 							</div>
 						</div>
 					</div>
-					<div className="page8">
-						<div className="mailchimp-wrapper">
-							<MailChimp fieldRef={fieldRef} />
-						</div>
-					</div>
+
 					<div className="footer-wrapper">
 						<h3 className="footer-title">LULO</h3>
-						<div className="copyright">Copyright © 2022. All Rights Reserved</div>
+						<div className="links-bar">
+							<div className="twitter"> <img className='twitter-img' src="twitter_icon.png"/></div>
+							<div className="discord"> <img className='discord-img' src="discord_2.png"/></div>
+							<div className="telegram"> <img className='telegram-img' src="telegram_icon.png"/></div>
+						</div>
+						<div className="solana-wrapper">
+							<span className='buffer' />			
+							<span className='solana-img-wrapper'>
+								<img className='solana-img' src="solanaLogoMark.png"></img>
+							</span>
+							<h3 className="solana-label">Powered by Solana</h3>
+						</div>
+
 					</div>
+					<div className="copyright">Copyright © 2022. All Rights Reserved</div>
 				</div>
 			</div>
 		</>
@@ -191,9 +212,8 @@ function MailChimp({ fieldRef }: { fieldRef: React.RefObject<HTMLInputElement> }
 
 	return (
 		<div ref={fieldRef} className="mc-outer">
-			<div className="mc-subscribe">Subscribe to stay up to date on our latest announcements</div>
-			<div className="mc-inner">
-				<div className="input-and-response">
+			
+				<div className="input-response">
 					<div className="input-wrapper">
 						<input
 							className="mc-input"
@@ -209,6 +229,7 @@ function MailChimp({ fieldRef }: { fieldRef: React.RefObject<HTMLInputElement> }
 						/>
 					</div>
 
+
 					<div className="mc-response">
 						{loading && <div className="mc-loading"> {loading} </div>}
 						{error && <div className="mc-error"> {message} </div>}
@@ -218,11 +239,10 @@ function MailChimp({ fieldRef }: { fieldRef: React.RefObject<HTMLInputElement> }
 				</div>
 				<div className="submit-col">
 					<div className="submit-grad-wrapper">
-						<button onClick={submitClick} className="app-button mc-button ">
-							Submit
+						<button onClick={submitClick} className="app-button mc-button">
+							Join Alpha
 						</button>
 					</div>
-				</div>
 			</div>
 		</div>
 	)

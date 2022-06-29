@@ -1,9 +1,4 @@
-
-@import url("https://fonts.googleapis.com/css?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
-
-
 
 @tailwind base;
 @tailwind components;
@@ -19,17 +14,6 @@ body {
   background: black;
 }
 
-.pink-text {
-  color: #f24a8b;
-}
-
-.green-text {
-  color:#bcfd49;
-}
-
-.bg-neon-green {
-  background-color: #bcfd49;
-}
 
 a {
   color: inherit;
@@ -40,103 +24,120 @@ a {
   box-sizing: border-box;
 }
 
+/*
+  Page wrapper: full when small, 80% border when md or bigger
+*/
 .pages-wrapper {
-  @apply w-screen flex flex-col items-center  
+  @apply w-screen flex flex-col items-center 
 }
 
 .pages-container {
   @apply w-screen h-full md:w-[80%] flex flex-col
 }
 
+
 /*
-  TODO can't remove ring
+  Page color black >> slate >> purple and column <> rows layout
 */
-input {
-  @apply focus:ring-0 focus:ring-offset-0;
+
+.gray-to-black {
+  @apply bg-gradient-to-t from-black/70 to-slate-800/70 
 }
 
-input {
-  @apply ring-offset-0 ring-0
+.black-to-gray {
+  @apply bg-gradient-to-b from-black/70 to-slate-800/70
 }
-/*
-  Page color black >> slate >> purple and 
-  column <> rows layout
-*/
+
+.page-body {
+  @apply flex flex-col 
+}
+
+.page-body-reverse {
+  @apply flex flex-col-reverse
+}
+
+.main-page {
+  @apply gray-to-black rounded-t-[40px]
+}
 
 .page1 {
-  @apply bg-gradient-to-t from-black/70 to-slate-800/70 rounded-t-3xl
+  @apply black-to-gray page-body 
 }
 
 .page2 {
-  @apply bg-gradient-to-b from-black/70 to-slate-800/70
-      flex flex-col items-center
+  @apply gray-to-black page-body-reverse
 }
 
 .page3 {
-  @apply bg-gradient-to-t from-black/70 to-slate-800/70
-        flex flex-col-reverse items-center
+  @apply black-to-gray page-body 
 }
 
 .page4 {
-  @apply bg-gradient-to-b from-black/70 to-slate-800/70
-  flex flex-col items-center
+  @apply gray-to-black page-body-reverse
 }
 
 .page5 {
-  @apply bg-gradient-to-t from-black/70 to-slate-800/70
-  flex flex-col-reverse items-center
+  @apply black-to-gray page-body 
 }
 
 .page6 {
-  @apply  bg-gradient-to-b from-black/70 to-slate-800/70
-  flex flex-col items-center
+  @apply gray-to-black page-body rounded-b-[40px]
 }
 
-.page7 {
-  @apply bg-gradient-to-b from-slate-800/70 to-purple-900/70
-  flex flex-col items-center
+/*
+  Text
+*/
+
+.light-gray {
+  @apply text-gray-200
 }
 
-.page8 {
-  @apply bg-gradient-to-t  to-purple-900/70  from-slate-800/70  rounded-b-3xl
-  flex flex-row items-center
+.dark-gray {
+  @apply text-gray-400
 }
-
-
-
 h1{
-  @apply green-text text-6xl md:text-9xl  
+  @apply text-lulo-green text-6xl md:text-9xl 
 }
 
 h2{
-  @apply text-2xl text-gray-200
+  @apply light-gray text-lg md:text-2xl 
 }
 
 h3{
-  @apply text-lg text-gray-400
+  @apply dark-gray text-base md:text-2xl 
 }
 
+.page-title {
+  @apply py-5 md:py-1 md:mt-10
+}
+
+.page-subtitle {
+  @apply py-5 md:py-3 px-10 
+}
+
+h1.page-title {
+  @apply text-transparent bg-clip-text animated
+} 
+
+/*
+  Header >> Hiden when small (nav buttons are absolute/relative with the main-page
+*/
+
 .header-wrapper {
-  @apply hidden md:h-20 md:flex md:items-center
+  @apply hidden md:h-20 md:flex md:items-center 
 }
 
 .header-title {
-  @apply  hidden md:flex md:pl-5 md:h-10 md:visible text-4xl items-center
+  @apply  hidden md:visible md:h-10 md:flex md:pl-5 text-4xl items-center
 
 }
 
 /*
-  Main Body
+  Buttons
 */
 
-
-
-.main-wrapper {
-  @apply h-screen relative p-5 flex flex-col items-center text-center justify-center  md:px-0 md:pt-20
-}
-
 .button-wrapper {
-  @apply absolute top-0 left-0 px-4 pt-2 md:top-[-77px] w-full  flex justify-end
+  @apply absolute top-0 left-0 px-4 pt-2 md:top-[-77px] w-full flex justify-end
 }
 
 .btn-separator {
@@ -144,83 +145,164 @@ h3{
 }
 
 .btn-grad-wrapper {
-  @apply lulo-animate rounded-full p-[2px] max-h-[60px] 
-  bg-gradient-to-r from-lulo-pink to-lulo-green
+  @apply max-h-[60px] animated rounded-full p-[2px] 
 }
 
-
-
 .contact-button {
-  @apply min-w-[20px] max-h-[70px]  px-[15px] py-[20px] p-5  bg-gray-800 text-white rounded-full text-xs cursor-arrowdown
-      
+  @apply min-w-[20px] max-h-[70px] px-[15px] py-[20px] p-5 bg-gray-800 light-gray rounded-full text-xs cursor-arrowdown
 }
 
 .app-button {
-  @apply min-w-[20px] max-h-[70px]   px-[15px] py-[20px] bg-gray-900 text-white rounded-full text-xs border-2 border-gray-800 
+  @apply min-w-[20px] max-h-[70px] px-[15px] py-[20px] bg-gray-900 dark-gray rounded-full text-xs
 }
 
 
 
-
-.blocks-wrapper {
-  @apply  h-screen py-5  justify-center  text-center text-2xl md:flex-row 
-}
-
-.page-title {
-  @apply  py-5 
-}
-
-.page-subtitle {
-  @apply py-5  px-10
-}
-
-img{
-  @apply max-h-[300px]  md:h-3/4 md:max-h-[75%]
-}
+/*
+  Main Body
+*/
 
 .main-image {
-  @apply md:h-[70%]  md:w-[80%] 
+  @apply md:w-[80%] md:h-[80%]
 }
+
+.main-wrapper {
+  @apply h-full md:h-screen relative py-20 md:px-0 md:pt-20 flex flex-col items-center text-center justify-center
+}
+
+img {
+  @apply max-h-[400px] h-[90%] 
+}
+
 .img-wrapper {
-  @apply     flex items-center justify-center 
+  @apply flex items-center justify-center 
 }
+
+.blocks-wrapper {
+  @apply h-full md:h-screen py-10 justify-center text-center text-2xl md:flex-row 
+}
+
+
 .left-block {
-  @apply w-screen  md:w-1/2 p-5 py-10 md:p-0 md:py-5  flex flex-col justify-center items-center md:px-5
+  @apply w-screen md:w-1/2 p-5 py-10 md:p-0 md:py-5 flex flex-col justify-center items-center md:px-5
 }
 
 .right-block {
-  @apply w-screen  md:w-1/2 p-5 py-10  md:pl-10 flex flex-col justify-center items-center md:px-5
+  @apply w-screen md:w-1/2 p-5 py-10 md:pl-10 flex flex-col justify-center items-center md:px-5
 }
 
 
 /*
-  Footer
+  Mailchimp
 */
+
+.mailchimp-wrapper {
+  @apply w-full h-full  border border-blue-500
+}
+
+.mc-outer {
+ @apply w-full h-full flex flex-col lg:flex-row items-center justify-center border border-green-500
+}
+
+.input-response {
+  @apply md:w-[50%] flex flex-col items-end 
+}
+
+.input-wrapper {
+  @apply w-full min-w-[225px] px-2 pt-2 lg:mt-5 text-sm md:text-lg
+}
+
+.mc-input {
+  @apply w-full bg-transparent dark-gray border-b-2 border-gray-400
+}
+
+.submit-col {
+  @apply flex flex-row justify-center px-2
+}
+
+.submit-grad-wrapper {
+  @apply max-h-[64px] p-[2px]  animated rounded-full 
+}
+
+.mc-button {
+  @apply min-w-[120px] max-h-[70px] px-[15px] py-[20px] light-gray
+}
+
+.mc-response {
+  @apply w-full min-h-[20px] pl-5 py-1 dark-gray text-xs 
+}
+
+.mc-loading .mc-success {
+  @apply dark-gray text-xs
+}
+
+.mc-error {
+  @apply text-red-300 text-xs
+}
+
+
+/*
+  TODO can't remove ring
+*/
+
+input {
+  @apply focus:ring-0 focus:ring-offset-0;
+}
+
+input {
+  @apply ring-offset-0 ring-0
+}
+
+/*
+  Footer - Lulo and Solana need to be same size to keep links in the middle
+*/
+
 .footer-wrapper {
-  @apply h-10  w-full md:h-[120px]
-      flex flex-row items-center justify-between md:px-10
+  @apply w-full flex flex-col md:flex-row items-center  border border-red-500 px-5
 }
 
 .footer-title {
-  @apply px-5 md:pl-5 md:h-10 green-text text-2xl md:text-3xl
+  @apply w-full md:h-10 md:pl-5 text-lulo-green text-2xl md:text-3xl border border-orange-500 
 }
+
+.links-bar {
+  @apply w-full flex flex-row max-h-[90px] px-2 py-5 border-2 border-green-500 justify-between
+}
+
+.links-bar div {
+  @apply flex items-center justify-center  border-2 border-blue-500
+}
+
+
+.solana-wrapper { 
+  @apply flex flex-row max-h-[50px]   w-full justify-end  border border-blue-500 
+}
+.buffer {
+  @apply md:w-[10%] border-2 border-green-500
+}
+.solana-img-wrapper {
+  @apply flex border border-red-500 w-[25%] items-center justify-end 
+}
+.solana-img {
+  @apply  object-scale-down border  border-green-500   
+}
+.solana-label {
+ @apply text-xs p-4 md:p-2 light-gray border  border-purple-500 justify-center
+}
+
+
 
 .copyright {
-  @apply text-xs text-gray-300 px-2
+  @apply w-full md:h-10  text-xs md:text-base text-center light-gray border border-green-500
 }
 
-
-
-
 /*
-  Title Animation
+  Animation
 */
 
-
-h1.page-title {
-  @apply text-transparent bg-clip-text lulo-animate
-      bg-gradient-to-r from-lulo-pink to-lulo-green
-} 
+.animated {
+  @apply lulo-animate bg-gradient-to-r from-lulo-pink to-lulo-green
+}
 
 @keyframes lulo2 {
   100% {
@@ -248,57 +330,3 @@ h1.page-title {
 }
 
 
-/*
-  Mailchimp
-*/
-
-.mailchimp-wrapper {
-  @apply w-full flex flex-row justify-center
-}
-
-.mc-outer {
- @apply w-full px-3 flex flex-col justify-center 
-}
-
-.mc-subscribe {
-  @apply py-2 text-lulo-green text-lg w-full text-center  
-}
-.mc-inner {
-  @apply w-full flex flex-row  justify-center
-}
-
-.input-and-response {
-  @apply flex flex-col   md:w-[50%] max-w-[500px] items-center
-}
-
-.input-wrapper {
-  @apply px-2 w-full min-w-[200px] pt-2
-}
-
-.mc-input {
-  @apply ring-offset-0 ring-0  focus:ring-0 focus:ring-offset-0 p-3 w-full  rounded-3xl bg-gray-600  text-gray-400
-}
-
-.submit-col {
-  @apply  flex flex-row justify-center px-2
-}
-.submit-grad-wrapper {
-  @apply lulo-animate rounded-full p-[2px] max-h-[64px]  
-  bg-gradient-to-r from-lulo-pink to-lulo-green
-}
-
-.mc-button {
-  @apply min-w-[120px] max-h-[70px]  px-[15px] py-[20px] text-gray-300
-}
-
-.mc-response {
-  @apply pl-5 py-1 min-h-[40px] text-gray-500
-}
-
-.mc-loading .mc-success {
-  @apply text-gray-500
-}
-
-.mc-error {
-  @apply text-red-300 text-xs
-}

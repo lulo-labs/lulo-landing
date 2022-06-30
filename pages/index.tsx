@@ -53,7 +53,7 @@ const Home: NextPage = () => {
 
 							<h2 className="page-subtitle">Liquidity-as-a-Service</h2>
 							<h3 className="page-subtitle">
-								Lulo seamlessly integrates with all your favorite DeFi protocols to offer a global
+								Lulo seamlessly integrates with all of your favorite DeFi protocols to offer a global
 								lending platform
 							</h3>
 						</div>

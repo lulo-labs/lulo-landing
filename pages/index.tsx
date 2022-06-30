@@ -12,10 +12,10 @@ const Home: NextPage = () => {
 
 	return (
 		<>
-			<Head>
-				<title>Lulo Finance</title>
-				<Analytics />
-			</Head>
+		<Head>
+			<title>Lulo Finance</title>
+			<Analytics />
+		</Head>
 
 			<div className="pages-wrapper">
 				<div className="pages-container">
@@ -140,13 +140,13 @@ const Home: NextPage = () => {
 						<h3 className="footer-title">LULO</h3>
 						<div className="links-bar">
 							<a className="twitter" href="https://twitter.com/lulo_finance" target="_blank" rel="noreferrer">
-								<img className="twitter-img" src="twitter_icon.png" />
+								<img className="twitter-img bg-white" src="twitter_square.png" />
 							</a>
 							<a className="discord" href="https://discord.com/invite/ahrDazzyqG" target="_blank" rel="noreferrer">
-								<img className="discord-img" src="discord_2.png" />
+								<img className="discord-img bg-white" src="discord_new.png" />
 							</a>
 							<a className="telegram" href="https://t.me/lulo_finance" target="_blank" rel="noreferrer">
-								<img className="telegram-img" src="telegram_icon.png" />
+								<img className="telegram-img bg-white" src="telegram_square.png" />
 							</a>
 						</div>
 						<div className="solana-wrapper">
@@ -243,8 +243,8 @@ function MailChimp({ fieldRef }: { fieldRef: React.RefObject<HTMLInputElement> }
 				</div>
 			</div>
 			<div className="submit-col">
-				<div className="submit-grad-wrapper">
-					<button onClick={submitClick} className="app-button mc-button">
+				<div className="btn-grad-wrapper">
+					<button onClick={submitClick} className="button-base">
 						Join Alpha
 					</button>
 				</div>

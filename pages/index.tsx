@@ -41,7 +41,7 @@ const Home: NextPage = () => {
 						<h2 className="page-subtitle">A Permissionless Lending Order Book</h2>
 
 						<h3 className="page-subtitle">
-							Lulo is a DeFI lending primitive that focuses on capital efficiency, composability, and risk management{' '}
+							Lulo is DeFi lending infrastructure that utilizes order book technology and creates a global liquidity layer
 						</h3>
 						<div className="main-image img-wrapper">
 							<img src="space-top.svg"></img>
@@ -50,10 +50,11 @@ const Home: NextPage = () => {
 
 					<div className="blocks-wrapper page1">
 						<div className="left-block">
-							<h2 className="page-subtitle">Blazingly fast, cheap, and transparent</h2>
+
+							<h2 className="page-subtitle">Liquidity-as-a-Service</h2>
 							<h3 className="page-subtitle">
-								Lenders and borrowers bid/offer at their desired rates and are matched transparently on-chain using our
-								lending order book. Loans have fixed terms, ensuring you can manage your funding precisely.
+								Lulo seamlessly integrates with all your favorite DeFi protocols to offer a global
+								lending platform
 							</h3>
 						</div>
 						<div className="right-block">
@@ -70,20 +71,19 @@ const Home: NextPage = () => {
 							</div>
 						</div>
 						<div className="right-block">
-							<h2 className="page-subtitle">10x your DeFi protocols</h2>
+							<h2> No More Borrow-Deposit Spread</h2>
 							<h3 className="page-subtitle">
-								Lulo seamlessly integrates with all your favorite DeFi trading platforms to offer more flexibility,
-								capital efficiency and risk management to traders.
+								By removing pooled risk, lenders and borrowers recieve competitive rates for their loans
 							</h3>
 						</div>
 					</div>
 
 					<div className="blocks-wrapper page3">
 						<div className="left-block">
-							<h2 className="page-subtitle">Tradeable Credit</h2>
+						<h2 className="page-subtitle">Blazingly fast, cheap, and transparent</h2>
 							<h3 className="page-subtitle">
-								Arbitrage rates, refinance for better terms, and hedge your risk with native secondary markets that
-								allow you to tokenize and trade loans.
+								Lenders and borrowers bid/offer at their desired rates and are matched transparently on-chain using our
+								lending order book
 							</h3>
 						</div>
 						<div className="right-block">
@@ -101,10 +101,9 @@ const Home: NextPage = () => {
 						</div>
 
 						<div className="right-block">
-							<h2 className="page-subtitle">Advanced Lender Tooling</h2>
+							<h2 className="page-subtitle">Powerful Risk Management Tools</h2>
 							<h3 className="page-subtitle">
-								Parameterized loans and custom lending tools allows you to isolate your lending to specific groups or
-								institutions
+								Secondary Markets, Rate Arbitrage, and Refinancing allow for better DeFi risk management
 							</h3>
 						</div>
 					</div>
@@ -113,7 +112,7 @@ const Home: NextPage = () => {
 						<div className="left-block">
 							<h2 className="page-subtitle">Join Our Alpha</h2>
 							<h3 className="page-subtitle">
-								We are interested in working with market makers, lenders, and traders who want to help us build scalable
+								We are interested in working with DeFi protocols, market makers, and lenders who want to help us build scalable
 								DeFi lending. Submit your email so we can get in touch.
 							</h3>
 						</div>
@@ -157,7 +156,7 @@ const Home: NextPage = () => {
 							<h3 className="solana-label">Powered by Solana</h3>
 						</div>
 					</div>
-					<div className="copyright">Copyright © 2022. All Rights Reserved</div>
+					<div className="copyright">© Lulo 2022. All Rights Reserved</div>
 				</div>
 			</div>
 		</>

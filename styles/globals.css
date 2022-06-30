@@ -8,7 +8,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, Fira Code, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Fira Code, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   background: black;
@@ -108,7 +108,7 @@ h3{
 }
 
 .page-title {
-  @apply py-5 md:py-1 md:mt-10
+  @apply py-5 md:py-1 mt-[60px] md:mt-[100px]
 }
 
 .page-subtitle {
@@ -167,7 +167,7 @@ h1.page-title {
 */
 
 .main-image {
-  @apply md:w-[80%] md:h-[80%]
+  @apply w-[95%] md:w-[80%] md:h-[80%]
 }
 
 .main-wrapper {
@@ -175,11 +175,11 @@ h1.page-title {
 }
 
 img {
-  @apply max-h-[400px] h-[90%] 
+  @apply max-h-[600px] h-[90%]
 }
 
 .img-wrapper {
-  @apply flex items-center justify-center 
+  @apply flex items-center justify-center
 }
 
 .blocks-wrapper {

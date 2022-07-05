@@ -188,6 +188,7 @@ function innerHtml() {
 }
 
 function MailChimp({ fieldRef }: { fieldRef: React.RefObject<HTMLInputElement> }) {
+	let submitted = false;
 	const mcUrl = 'https://gmail.us12.list-manage.com/subscribe/post?u=1e1f2971d71a0cde63a8b8b51&amp;id=6f6efae571'
 	const { loading, error, success, message, handleSubmit } = mc.useMailChimpForm(mcUrl)
 
@@ -213,7 +214,7 @@ function MailChimp({ fieldRef }: { fieldRef: React.RefObject<HTMLInputElement> }
 			setErrorMsg('Please enter a valid email address')
 		}
 
-		if(!success){
+		if(submitted && !success){
 			setErrorMsg('Something went wrong')
 		}
 
@@ -224,7 +225,7 @@ function MailChimp({ fieldRef }: { fieldRef: React.RefObject<HTMLInputElement> }
 			setErrorMsg('Please enter a valid email address')
 			return
 		}
-
+		submitted = true
 		handleSubmit({ EMAIL: emailAddress })
 	}
 

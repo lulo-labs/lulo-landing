@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 			<Analytics />
 		</Head>
 
-			<div className="pages-wrapper">
+			<div className="pages-wrapper">	
 				<div className="pages-container">
 					<div className="header-wrapper">
 						<h1 className="header-title">LULO</h1>
@@ -138,14 +138,14 @@ const Home: NextPage = () => {
 					<div className="footer-wrapper">
 						<h3 className="footer-title">LULO</h3>
 						<div className="links-bar">
-							<a className="twitter" href="https://twitter.com/lulo_finance" target="_blank" rel="noreferrer">
-								<img className="twitter-img bg-white" src="twitter_square.png" />
-							</a>
 							<a className="discord" href="https://discord.com/invite/ahrDazzyqG" target="_blank" rel="noreferrer">
-								<img className="discord-img bg-white" src="discord_new.png" />
+								<img className="discord-img" src="discord.jpg" />
+							</a>
+							<a className="twitter" href="https://twitter.com/lulo_finance" target="_blank" rel="noreferrer">
+								<img className="twitter-img" src="twitter.jpg" />
 							</a>
 							<a className="telegram" href="https://t.me/lulo_finance" target="_blank" rel="noreferrer">
-								<img className="telegram-img bg-white" src="telegram_square.png" />
+								<img className="telegram-img" src="telegram.jpg" />
 							</a>
 						</div>
 						<div className="solana-wrapper">

@@ -207,6 +207,18 @@ function MailChimp({ fieldRef }: { fieldRef: React.RefObject<HTMLInputElement> }
 		}
 	}, [errorMsg])
 
+	useEffect(() => {
+
+		if(message && message.includes("address")){
+			setErrorMsg('Please enter a valid email address')
+		}
+
+		if(!success){
+			setErrorMsg('Something went wrong')
+		}
+
+	}, [message, success])
+
 	const submitClick = () => {
 		if (emailAddress == '' || emailAddress.indexOf('@') == -1) {
 			setErrorMsg('Please enter a valid email address')
@@ -218,6 +230,7 @@ function MailChimp({ fieldRef }: { fieldRef: React.RefObject<HTMLInputElement> }
 
 	return (
 		<div ref={fieldRef} className="mc-outer">
+			<div className="mc-inner">
 			<div className="input-response">
 				<div className="input-wrapper">
 					<input
@@ -236,7 +249,7 @@ function MailChimp({ fieldRef }: { fieldRef: React.RefObject<HTMLInputElement> }
 
 				<div className="mc-response">
 					{loading && <div className="mc-loading"> {loading} </div>}
-					{error && <div className="mc-error"> {message} </div>}
+					{error && <div className="mc-error"> {error} </div>}
 					{errorMsg && <div className="mc-error"> {errorMsg} </div>}
 					{success && <div className="mc-success"> {message} </div>}
 				</div>
@@ -247,6 +260,7 @@ function MailChimp({ fieldRef }: { fieldRef: React.RefObject<HTMLInputElement> }
 						Join Alpha
 					</button>
 				</div>
+			</div>
 			</div>
 		</div>
 	)

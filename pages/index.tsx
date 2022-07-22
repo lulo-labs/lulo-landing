@@ -38,10 +38,10 @@ const Home: NextPage = () => {
 							</div>
 						</div>
 						<h1 className="page-title">LULO</h1>
-						<h2 className="page-subtitle">A Permissionless Lending Order Book</h2>
+						<h2 className="page-subtitle">A Decentralized Lending Order Book</h2>
 
 						<h3 className="page-subtitle">
-							Lulo is DeFi lending infrastructure that utilizes order book technology and creates a global liquidity layer
+							Lulo is a DeFi lending protocol that utilizes order book technology to create a global liquidity layer
 						</h3>
 						<div className="main-image img-wrapper">
 							<img src="space-top.svg"></img>
